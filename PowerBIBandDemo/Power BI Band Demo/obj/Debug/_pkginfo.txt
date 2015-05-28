@@ -1,0 +1,1 @@
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\AppPackages\Event Hub Band Demo_2.3.0.12_AnyCPU_Debug_Test\Event Hub Band Demo_2.3.0.12_AnyCPU_Debug.appx

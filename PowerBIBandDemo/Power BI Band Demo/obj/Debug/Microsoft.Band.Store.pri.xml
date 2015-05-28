@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Microsoft.Band.Store" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Microsoft.Band.Store">
+				<NamedResource name="Microsoft.Band.Store.xr.xml" uri="ms-resource://Microsoft.Band.Store/Files/Microsoft.Band.Store/Microsoft.Band.Store.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Band.Store\Microsoft.Band.Store.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Tiles">
+					<NamedResource name="AddTilePage.xbf" uri="ms-resource://Microsoft.Band.Store/Files/Microsoft.Band.Store/Tiles/AddTilePage.xbf">
+						<Candidate type="Path">
+							<Value>Microsoft.Band.Store\Tiles\AddTilePage.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Band.Store">
+			<ResourceMapSubtree name="Resources">
+				<ResourceMapSubtree name="AddTilePageAddButtonLabel">
+					<NamedResource name="Label" uri="ms-resource://Microsoft.Band.Store/Microsoft.Band.Store/Resources/AddTilePageAddButtonLabel/Label">
+						<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+							<Value>yes</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="AddTilePageCancelButtonLabel">
+					<NamedResource name="Label" uri="ms-resource://Microsoft.Band.Store/Microsoft.Band.Store/Resources/AddTilePageCancelButtonLabel/Label">
+						<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+							<Value>no</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="AddTilePagePromptText">
+					<NamedResource name="Text" uri="ms-resource://Microsoft.Band.Store/Microsoft.Band.Store/Resources/AddTilePagePromptText/Text">
+						<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+							<Value>Add this Tile to your Band?</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="StoreResources">
+				<NamedResource name="DeviceInfoNotBluetooth" uri="ms-resource://Microsoft.Band.Store/Microsoft.Band.Store/StoreResources/DeviceInfoNotBluetooth">
+					<Candidate type="String">
+						<Value>BandInfo must be for a Bluetooth connection.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PushServiceNotFound" uri="ms-resource://Microsoft.Band.Store/Microsoft.Band.Store/StoreResources/PushServiceNotFound">
+					<Candidate type="String">
+						<Value>Band does not support push service.</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="AddTilePagePromptText">
+					<NamedResource name="Text" uri="ms-resource://Microsoft.Band.Store/Microsoft.Band.Store/StoreResources/AddTilePagePromptText/Text">
+						<Candidate type="String">
+							<Value>Some text!</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

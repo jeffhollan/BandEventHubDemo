@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Microsoft.Band.Phone" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Microsoft.Band.Phone">
+				<NamedResource name="Microsoft.Band.Phone.xr.xml" uri="ms-resource://Microsoft.Band.Phone/Files/Microsoft.Band.Phone/Microsoft.Band.Phone.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Band.Phone\Microsoft.Band.Phone.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Tiles">
+					<NamedResource name="PhoneAddTilePage.xbf" uri="ms-resource://Microsoft.Band.Phone/Files/Microsoft.Band.Phone/Tiles/PhoneAddTilePage.xbf">
+						<Candidate type="Path">
+							<Value>Microsoft.Band.Phone\Tiles\PhoneAddTilePage.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

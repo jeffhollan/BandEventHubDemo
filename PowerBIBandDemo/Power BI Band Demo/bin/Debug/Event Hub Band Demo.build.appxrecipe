@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JEFF-HTPC</Machine>
+    <WindowsUser>Jeff</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>a4d1fd92-2b06-46a0-a016-e70a6a1ddb4f</PackageIdentityName>
+    <IntermediateOutputPath>D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.exe">
+      <PackagePath>PowerBIBandDemo.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\packages\Microsoft.Band.1.3.10219-preview\lib\wpa81\Microsoft.Band.dll">
+      <PackagePath>Microsoft.Band.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\packages\Microsoft.Band.1.3.10219-preview\lib\wpa81\Microsoft.Band.Phone.dll">
+      <PackagePath>Microsoft.Band.Phone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\packages\Microsoft.Band.1.3.10219-preview\lib\wpa81\Microsoft.Band.Store.dll">
+      <PackagePath>Microsoft.Band.Store.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.14.201151115\lib\wpa\Microsoft.IdentityModel.Clients.ActiveDirectory.winmd">
+      <PackagePath>Microsoft.IdentityModel.Clients.ActiveDirectory.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\SplashScreen.scale-140.png">
+      <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\Square44x44Logo.scale-240.png">
+      <PackagePath>Assets\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.xr.xml">
+      <PackagePath>PowerBIBandDemo.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\packages\Microsoft.Band.1.3.10219-preview\lib\wpa81\Microsoft.Band.Phone\Microsoft.Band.Phone.xr.xml">
+      <PackagePath>Microsoft.Band.Phone\Microsoft.Band.Phone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\packages\Microsoft.Band.1.3.10219-preview\lib\wpa81\Microsoft.Band.Phone\Tiles\PhoneAddTilePage.xbf">
+      <PackagePath>Microsoft.Band.Phone\Tiles\PhoneAddTilePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\packages\Microsoft.Band.1.3.10219-preview\lib\wpa81\Microsoft.Band.Store\Microsoft.Band.Store.xr.xml">
+      <PackagePath>Microsoft.Band.Store\Microsoft.Band.Store.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\packages\Microsoft.Band.1.3.10219-preview\lib\wpa81\Microsoft.Band.Store\Tiles\AddTilePage.xbf">
+      <PackagePath>Microsoft.Band.Store\Tiles\AddTilePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\App.xbf
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\MainPage.xbf
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.xr.xml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.exe
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.pdb
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\resources.pri
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\AppxManifest.xml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Event Hub Band Demo.build.appxrecipe
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.dll
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Phone.dll
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Store.dll
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.winmd
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Phone.pri
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Store.pri
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.g.i.cs
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.g.cs
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.g.i.cs
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.g.cs
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\XamlTypeInfo.g.cs
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.xaml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.xaml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.xbf
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.xbf
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\XamlSaveStateFile.xml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\PowerBIBandDemo.exe
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\PowerBIBandDemo.pdb
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band\en\Microsoft.Band.BandResources.resw
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Event Hub Band Demo.csproj.GenerateResource.Cache
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band.pri
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band\qualifiers.txt
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\priconfig.xml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\priconfig.xml.intermediate
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\layout.resfiles
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\layout.resfiles.intermediate
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\resources.resfiles
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\resources.resfiles.intermediate
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\pri.resfiles
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\pri.resfiles.intermediate
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\qualifiers.txt
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\qualifiers.txt.intermediate
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band.Phone.pri.xml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band.Store.pri.xml
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\ProjectArchitectures.txt
+D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Event Hub Band Demo.csprojResolveAssemblyReference.cache

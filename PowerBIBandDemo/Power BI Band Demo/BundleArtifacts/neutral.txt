@@ -1,0 +1,4 @@
+MainPackage=D:\Development\Microsoft Band SDK Preview WP\Samples\Sensors\bin\Release\Sensors_1.1.0.5_AnyCPU.appx
+SymbolPackage=D:\Development\Microsoft Band SDK Preview WP\Samples\Sensors\AppPackages\Sensors_1.1.0.5_Test\Sensors_1.1.0.5_AnyCPU.appxsym
+ResourcePack=D:\Development\Microsoft Band SDK Preview WP\Samples\Sensors\bin\Release\Sensors_1.1.0.5_scale-100.appx
+ResourcePack=D:\Development\Microsoft Band SDK Preview WP\Samples\Sensors\bin\Release\Sensors_1.1.0.5_scale-140.appx

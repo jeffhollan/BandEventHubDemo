@@ -1,0 +1,36 @@
+{
+ "name": "My Vitals",
+   "tables": 
+   [
+     {
+       "name": "Temperature", "columns": 
+         [
+           { "name": "temperature", "dataType": "double"},
+           { "name": "timestamp", "dataType": "DateTime"}
+         ]
+      },
+      {
+	  "name": "Heartrate", "columns": 
+         [
+           { "name": "heartrate", "dataType": "Int64"},
+           { "name": "quality", "dataType": "string"},
+           { "name": "timestamp", "dataType": "DateTime"}
+         ]
+      },
+      {
+	  "name": "Pedometer", "columns": 
+         [
+           { "name": "steps", "dataType": "Int64"},
+           { "name": "timestamp", "dataType": "DateTime"}
+         ]
+      },
+      {"name": "Worn", "columns": 
+         [
+           { "name": "status", "dataType": "string"},
+           { "name": "timestamp", "dataType": "DateTime"}
+         ]
+      }
+      
+      
+    ]
+}

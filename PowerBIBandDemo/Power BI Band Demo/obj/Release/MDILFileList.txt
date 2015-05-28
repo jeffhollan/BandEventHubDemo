@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Files><file>\Microsoft.Band.dll</file><file>\Microsoft.Band.Phone.dll</file><file>\Microsoft.Band.Store.dll</file><file>\Microsoft.IdentityModel.Clients.ActiveDirectory.winmd</file><file>\PowerBIBandDemo.exe</file></Files>
