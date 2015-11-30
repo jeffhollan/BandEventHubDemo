@@ -63,11 +63,69 @@ namespace Sensors
         public string status { get; set; }
 
         [DataMember]
+        public double speed { get; set; }
+
+        [DataMember]
+        public double accelX { get; set; }
+        [DataMember]
+        public double accelY { get; set; }
+        [DataMember]
+        public double accelZ { get; set; }
+        [DataMember]
+        public double gyroX { get; set; }
+        [DataMember]
+        public double gyroY { get; set; }
+
+        [DataMember]
+        public double gyroZ { get; set; }
+        [DataMember]
         public double temperature { get; set; }
 		[DataMember]
 		public string eventtime { get; set; }
 	}
 
+	//[DataContract]
+	//public class Pedometer
+	//{
+	//	[DataMember]
+	//	public int steps { get; set; }
+	//	[DataMember]
+	//	public DateTime timestamp { get; set; }
+	//}
 
+	//[DataContract]
+	//public class Temperature
+	//{
+	//	[DataMember]
+	//	public double temperature { get; set; }
+	//	[DataMember]
+	//	public DateTime timestamp { get; set; }
+	//}
+
+	//[DataContract]
+	//public class Worn
+	//{
+	//	[DataMember]
+	//	public string status { get; set; }
+	//	[DataMember]
+	//	public DateTime timestamp { get; set; }
+	//}
+
+	//[DataContract]
+	//public class Dataset
+	//{
+	//	[DataMember]
+	//	public List<DatasetMember> datasets { get; set; }
+	//}
+
+	//public class DatasetMember
+	//{
+	//	[DataMember]
+	//	public string id { get; set; }
+	//	[DataMember]
+	//	public string name { get; set; }
+	//	[DataMember]
+	//	public string defaultRetentionPolic { get; set; }
+	//}
 
 }

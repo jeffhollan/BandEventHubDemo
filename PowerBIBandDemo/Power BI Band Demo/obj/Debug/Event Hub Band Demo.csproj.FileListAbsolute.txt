@@ -1,46 +1,41 @@
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\App.xbf
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\MainPage.xbf
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.xr.xml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.exe
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.pdb
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\resources.pri
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\AppxManifest.xml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Event Hub Band Demo.build.appxrecipe
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.dll
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Phone.dll
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Store.dll
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.winmd
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Phone.pri
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Store.pri
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.g.i.cs
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.g.cs
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.g.i.cs
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.g.cs
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\XamlTypeInfo.g.cs
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.xaml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.xaml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.xbf
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.xbf
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\XamlSaveStateFile.xml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\PowerBIBandDemo.exe
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\PowerBIBandDemo.pdb
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band\en\Microsoft.Band.BandResources.resw
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Event Hub Band Demo.csproj.GenerateResource.Cache
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band.pri
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band\qualifiers.txt
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\priconfig.xml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\priconfig.xml.intermediate
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\layout.resfiles
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\layout.resfiles.intermediate
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\resources.resfiles
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\resources.resfiles.intermediate
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\pri.resfiles
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\pri.resfiles.intermediate
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\qualifiers.txt
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\qualifiers.txt.intermediate
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band.Phone.pri.xml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band.Store.pri.xml
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\ProjectArchitectures.txt
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Event Hub Band Demo.csprojResolveAssemblyReference.cache
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\App.xbf
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\MainPage.xbf
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.xr.xml
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.exe
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\PowerBIBandDemo.pdb
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\resources.pri
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\AppxManifest.xml
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Event Hub Band Demo.build.appxrecipe
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.dll
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Phone.dll
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Store.dll
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Phone.pri
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\bin\Debug\Microsoft.Band.Store.pri
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.g.i.cs
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.g.cs
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.g.i.cs
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.g.cs
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.xaml
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.xaml
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\App.xbf
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MainPage.xbf
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\XamlSaveStateFile.xml
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\PowerBIBandDemo.exe
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\PowerBIBandDemo.pdb
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Event Hub Band Demo.csproj.GenerateResource.Cache
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\priconfig.xml
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\priconfig.xml.intermediate
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\layout.resfiles
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\layout.resfiles.intermediate
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\resources.resfiles
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\resources.resfiles.intermediate
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\pri.resfiles
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\pri.resfiles.intermediate
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\qualifiers.txt
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\qualifiers.txt.intermediate
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band.Phone.pri.xml
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Microsoft.Band.Store.pri.xml
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\ProjectArchitectures.txt
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\obj\Debug\Event Hub Band Demo.csprojResolveAssemblyReference.cache

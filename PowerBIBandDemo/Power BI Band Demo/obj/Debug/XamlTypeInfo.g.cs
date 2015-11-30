@@ -608,8 +608,3 @@ namespace PowerBIBandDemo.Event_Hub_Band_Demo_XamlTypeInfo
 }
 
 
-
-
-
-
-

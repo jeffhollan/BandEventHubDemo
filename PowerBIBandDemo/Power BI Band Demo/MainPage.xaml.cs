@@ -18,7 +18,6 @@
 
 using Microsoft.Band;
 using Microsoft.Band.Sensors;
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -51,15 +50,7 @@ namespace Sensors
 
         private static string currentWearStatus = "Worn";
 
-        //OAuth2 authority
-        //private const string authority = "https://login.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/authorize?api-version=1.0";
-        private const string authority = "https://login.windows.net/microsoft.onmicrosoft.com/oauth2/authorize";
-
-
-        //Power BI resource uri
-        private const string resourceUri = "https://analysis.windows.net/powerbi/api";
-
-        private AuthenticationContext authContext = null;
+       
 
         private Uri redirectU = null;
 
@@ -77,7 +68,7 @@ namespace Sensors
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-			authContext = AuthenticationContext.CreateAsync(authority).GetResults();
+			//authContext = AuthenticationContext.CreateAsync(authority).GetResults();
 
 
 			redirectU = Windows.Security.Authentication.Web.WebAuthenticationBroker.GetCurrentApplicationCallbackUri();
@@ -91,7 +82,11 @@ namespace Sensors
 
 		private async void MainPage_Loaded(object sender, RoutedEventArgs e)
 		{
+            //Delay 500 miliseconds so the UI has time to load before authentication pops up
 
+            //await Task.Delay(500);
+            ////if (accessToken.Equals(String.Empty))
+            ////	GetToken();
 
             accessToken = "FILLER";
             var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
@@ -109,27 +104,27 @@ namespace Sensors
 		{
 			// Try to get a token without triggering any user prompt. 
 			// ADAL will check whether the requested token wis in the cache or can be obtained without user itneraction (e.g. via a refresh token).
-			AuthenticationResult result = await authContext.AcquireTokenSilentAsync(resourceUri, clientID);
-			if (result != null && result.Status == AuthenticationStatus.Success)
-			{
-				// A token was successfully retrieved. Get the To Do list for the current user
-				DisplayToken(result);
-			}
-			else
-			{
-				try
-				{
-					//authContext.TokenCache.Clear();
+			//AuthenticationResult result = await authContext.AcquireTokenSilentAsync(resourceUri, clientID);
+			//if (result != null && result.Status == AuthenticationStatus.Success)
+			//{
+			//	// A token was successfully retrieved. Get the To Do list for the current user
+			//	//DisplayToken(result);
+			//}
+			//else
+			//{
+			//	try
+			//	{
+			//		//authContext.TokenCache.Clear();
 
-					// Acquiring a token without user interaction was not possible. 
-					// Trigger an authentication experience and specify that once a token has been obtained the DisplayToken method should be called
-					authContext.AcquireTokenAndContinue(resourceUri, clientID, redirectU, DisplayToken);
-				}
-				catch (Exception ex)
-				{
-					Debug.WriteLine(ex);
-				}
-			}
+			//		// Acquiring a token without user interaction was not possible. 
+			//		// Trigger an authentication experience and specify that once a token has been obtained the DisplayToken method should be called
+			//		//authContext.AcquireTokenAndContinue(resourceUri, clientID, redirectU, DisplayToken);
+			//	}
+			//	catch (Exception ex)
+			//	{
+			//		Debug.WriteLine(ex);
+			//	}
+			//}
 
 			
 		}
@@ -139,16 +134,19 @@ namespace Sensors
 		/// Method to store the access token from Azure AD once it gets it
 		/// </summary>
 		/// <param name="result"></param>
-		private void DisplayToken(AuthenticationResult result)
-		{
-			Debug.WriteLine("Got Token: {0}", result.AccessToken);
-			accessToken = result.AccessToken;
-		}
-		/// <summary>
+		//private void DisplayToken(string result)
+		//{
+		//	Debug.WriteLine("Got Token: {0}", result.AccessToken);
+		//	accessToken = result.AccessToken;
+		//}
+		///// <summary>
 		/// Connect to Microsoft Band and read Accelerometer data.
 		/// </summary>
 		private async void Button_Click(object sender, RoutedEventArgs e)
 		{
+
+           
+
             var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
             localSettings.Values["publisher"] = Publisher.Text;
             localSettings.Values["key"] = Key.Text;
@@ -180,8 +178,9 @@ namespace Sensors
 			//If you don't have the table ID or the access token, skip all the running stuff
 			if (accessToken != String.Empty && tableId != null)
 			{
+               
 
-				this.generalText.Text = "Connecting to band....";
+                    this.generalText.Text = "Connecting to band....";
 				LoadingText.Text = "Connecting to band....";
 				pairedBands = await BandClientManager.Instance.GetBandsAsync();
 				if (pairedBands.Length < 1)
@@ -206,14 +205,24 @@ namespace Sensors
 				this.packetText.Text = String.Format("Packet success rate: {0} / {1}", successfulCalls.ToString(), totalCalls.ToString());
 				packetText.Visibility = Visibility.Visible;
 
-				//Tell the band to listen to these sensors
-				TemperatureListen();
-				HeartRateListen();
-				PedometerListen();
-				WornListen();
-				DistanceListen();
-			}
-		}
+                // check current user heart rate consent 
+                if (bandClient.SensorManager.HeartRate.GetCurrentUserConsent() != UserConsent.Granted)
+
+                {  // user has not consented, request it  
+                    await bandClient.SensorManager.HeartRate.RequestUserConsentAsync();
+                }
+
+
+                //Tell the band to listen to these sensors
+                TemperatureListen();
+                HeartRateListen();
+                PedometerListen();
+                WornListen();
+                DistanceListen();
+                AccelListen();
+                GyroListen();
+            }
+        }
 
 		/// <summary>
 		/// Attempt to get the datasets for the user.  If they don't have the My Vitals dataset, prompt them to create one
@@ -249,11 +258,69 @@ namespace Sensors
 			//subscribe to skin temperature
 
 			bandClient.SensorManager.SkinTemperature.ReadingChanged += SkinTemperature_ReadingChanged;
-			await bandClient.SensorManager.SkinTemperature.StartReadingsAsync();
+            await bandClient.SensorManager.SkinTemperature.StartReadingsAsync();
 
 		}
 
-		private async void DistanceListen()
+        private async void AccelListen()
+        {
+
+            //subscribe to skin temperature
+
+            bandClient.SensorManager.Accelerometer.ReadingChanged += Accel_ReadingChanged;
+            await bandClient.SensorManager.Accelerometer.StartReadingsAsync();
+
+        }
+
+        private void Accel_ReadingChanged(object sender, BandSensorReadingEventArgs<IBandAccelerometerReading> e)
+        {
+            try
+            {
+                if (e.SensorReading != null)
+                {
+                    IBandAccelerometerReading acc = e.SensorReading;
+                    currentVitals.accelX = acc.AccelerationX;
+                    currentVitals.accelY = acc.AccelerationY;
+                    currentVitals.accelZ = acc.AccelerationZ;
+
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        private async void GyroListen()
+        {
+
+            //subscribe to skin temperature
+
+            bandClient.SensorManager.Gyroscope.ReadingChanged += Gyro_ReadingChanged;
+            await bandClient.SensorManager.Gyroscope.StartReadingsAsync();
+
+        }
+
+        private void Gyro_ReadingChanged(object sender, BandSensorReadingEventArgs<IBandGyroscopeReading> e)
+        {
+            try
+            {
+                if (e.SensorReading != null)
+                {
+                    IBandGyroscopeReading gyro = e.SensorReading;
+                    currentVitals.gyroX = gyro.AngularVelocityX;
+                    currentVitals.gyroY = gyro.AngularVelocityY;
+                    currentVitals.gyroZ = gyro.AngularVelocityZ;
+
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        private async void DistanceListen()
 		{
 			bandClient.SensorManager.Distance.ReadingChanged += Distance_ReadingChange;
 			await bandClient.SensorManager.Distance.StartReadingsAsync();
@@ -267,9 +334,10 @@ namespace Sensors
 		/// </summary>
 		private async void HeartRateListen()
 		{
-			bandClient.SensorManager.HeartRate.ReadingChanged += HeartRate_ReadingChanged;
-			await bandClient.SensorManager.HeartRate.StartReadingsAsync();
-		}
+            bandClient.SensorManager.HeartRate.ReadingChanged += HeartRate_ReadingChanged;
+          //  var timespans = bandClient.SensorManager.HeartRate.SupportedReportingIntervals;
+            await bandClient.SensorManager.HeartRate.StartReadingsAsync();
+        }
 
 		/// <summary>
 		/// Set a listener to changes in pedometer from the band.  Start reading
@@ -362,11 +430,6 @@ namespace Sensors
 
 		}
 
-        /// <summary>
-        /// Ended up not publishing distance data, but the listener is here and could be easily enabled.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
 		private async void Distance_ReadingChange(object sender, BandSensorReadingEventArgs<IBandDistanceReading> e)
 		{
 			try
@@ -374,12 +437,14 @@ namespace Sensors
 				if (e.SensorReading != null)
 				{
 					IBandDistanceReading dis = e.SensorReading;
+                    currentVitals.speed = dis.Speed / 100;
 
-					await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+                    await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
 					{
-						//distTextBlock.Text = dis.TotalDistance.ToString();
-						//dispTextBlock.Text = dis.Pace.ToString();
-						//dissTextBlock.Text = dis.Speed.ToString();
+                        //distTextBlock.Text = dis.TotalDistance.ToString();
+                        //dispTextBlock.Text = dis.Pace.ToString();
+                        dissTextBlock.Text = (dis.Speed / 100).ToString();
+                        
 						//discmTextBlock.Text = dis.CurrentMotion.ToString();
 						//disTimeStamp.Text = dis.Timestamp.ToString();
 					});
@@ -442,9 +507,11 @@ namespace Sensors
 
 			if (newSteps != prevSteps)
 			{
-				
+				//MainPage.totalCalls++;
+                //pbi.CreateRow(accessToken, tableId, "Pedometer", new Pedometer { steps = (int)(newSteps - prevSteps), timestamp = ped.Timestamp.LocalDateTime.Add(ped.Timestamp.Offset) });
                 currentVitals.steps = (int)(newSteps - prevSteps);
-
+                //currentVitals.timestamp = ped.Timestamp.LocalDateTime.Add(ped.Timestamp.Offset);
+             //   pbi.CreateRow(currentVitals);
 
                 prevSteps = newSteps;
 			}
@@ -471,7 +538,8 @@ namespace Sensors
 
             //pbi.CreateRow(accessToken, tableId, "Worn", new Worn { status = status.State.ToString(), timestamp = status.Timestamp.LocalDateTime.Add(status.Timestamp.Offset) });
             currentVitals.status = status.State.ToString();
-
+            //currentVitals.timestamp = status.Timestamp.LocalDateTime.Add(status.Timestamp.Offset);
+       //     pbi.CreateRow(currentVitals);
 
             if (!status.State.ToString().Equals(currentWearStatus))
 			{
@@ -487,7 +555,47 @@ namespace Sensors
 
 		}
 
-		
+		/// <summary>
+		/// This is the "CLEAR TABLES" button.  Send the clear data protocol to power BI for the 4 sensor tables we have provisioned.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		//private async void Button_Click_1(object sender, RoutedEventArgs e)
+		//{
+
+
+
+		//	LoadingBar.IsEnabled = true;
+		//	LoadingBar.Visibility = Visibility.Visible;
+		//	FadeBorder.Visibility = Visibility.Visible;
+		//	LoadingText.Visibility = Visibility.Visible;
+
+		//	//if (accessToken.Equals(String.Empty))
+		//	//	await GetToken();
+
+		//	if (tableId == null)
+		//	{
+		//		await GetTableID();
+		//	}
+
+		//	string message = "Tables Cleared Successfully!";
+
+		//	if (!await pbi.ClearData(accessToken, tableId, "Heartrate") || !await pbi.ClearData(accessToken, tableId, "Pedometer") || !await pbi.ClearData(accessToken, tableId, "Temperature") || !await pbi.ClearData(accessToken, tableId, "Worn"))
+		//		message = "Something went wrong, please try again.";
+
+		//	LoadingBar.IsEnabled = false;
+		//	LoadingBar.Visibility = Visibility.Collapsed;
+		//	LoadingText.Visibility = Visibility.Collapsed;
+
+		//	totalCalls = 0;
+		//	successfulCalls = 0;
+		//	packetText.Visibility = Visibility.Collapsed;
+
+		//	await new MessageDialog(message, "Information").ShowAsync();
+
+		//	FadeBorder.Visibility = Visibility.Collapsed;
+		//}
+
 
 
 
@@ -563,7 +671,7 @@ namespace Sensors
 		public async void ContinueWebAuthentication(WebAuthenticationBrokerContinuationEventArgs args)
 		{
 			Debug.WriteLine("Continuation Working.");
-			await authContext.ContinueAcquireTokenAsync(args);
+			//await authContext.ContinueAcquireTokenAsync(args);
 		}
 
 

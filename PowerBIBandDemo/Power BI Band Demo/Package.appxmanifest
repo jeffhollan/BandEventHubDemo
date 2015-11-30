@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="TempPackage.PowerBIMicrosoftBandDemo" Publisher="CN=1C593C77-1466-4D90-8497-4B5F58797072" Version="2.3.0.14" />
+  <Identity Name="TempPackage.PowerBIMicrosoftBandDemo" Publisher="CN=1C593C77-1466-4D90-8497-4B5F58797072" Version="2.3.0.17" />
   <mp:PhoneIdentity PhoneProductId="a4d1fd92-2b06-46a0-a016-e70a6a1ddb4f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Event Hub Microsoft Band Demo</DisplayName>
@@ -31,10 +31,10 @@
     <DeviceCapability Name="proximity" />
     <DeviceCapability Name="bluetooth.rfcomm" xmlns="http://schemas.microsoft.com/appx/2013/manifest">
       <Device Id="any">
-        <!-- Used by the Microsoft Band SDK Preview -->
-        <Function Type="serviceId:A502CA9A-2BA5-413C-A4E0-13804E47B38F" />
-        <!-- Used by the Microsoft Band SDK Preview -->
-        <Function Type="serviceId:C742E1A2-6320-5ABC-9643-D206C677E580" />
+        <!-- Used by the Microsoft Band SDK -->
+        <!-- Used by the Microsoft Band SDK --><Function Type="serviceId:A502CA9A-2BA5-413C-A4E0-13804E47B38F" />
+        <!-- Used by the Microsoft Band SDK -->
+        <!-- Used by the Microsoft Band SDK --><Function Type="serviceId:C742E1A2-6320-5ABC-9643-D206C677E580" />
       </Device>
     </DeviceCapability>
   </Capabilities>

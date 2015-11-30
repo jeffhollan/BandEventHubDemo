@@ -7,36 +7,54 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <!--<Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Icon="Setting" Label="Settings" Click="SettingClick"/>
+            <AppBarButton Icon="Cancel" Label="Disconnect" Click="Disconnect"/>
+        </CommandBar>
+    </Page.BottomAppBar>-->
 
-	<Grid>
+    <Grid>
 		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="POWER BI MICROSOFT BAND - DEMO" VerticalAlignment="Top" Height="23" Width="380" FontSize="16"/>
 		<ScrollViewer>
 			<StackPanel>
-				<Grid Margin="0,75,0,25" x:Name="MyGrid" Grid.Column="1">
+				<Grid Margin="0,30,0,25" x:Name="MyGrid" Grid.Column="1">
 					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="100" />
-                        <ColumnDefinition Width="150" />
+						<ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 					<Grid.RowDefinitions>
 						<RowDefinition Height="50" />
-						
-					</Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
 
 					<!--<TextBlock Grid.Row="0" Grid.Column="0" Text="Namespace:" FontSize="14.667" HorizontalAlignment="Right" VerticalAlignment="Center" />
 					<TextBox Grid.Row="0" Grid.Column="1" x:Name="Namespace" />
 					<TextBlock Grid.Row="1" Grid.Column="0" Text="Hub:" FontSize="14.667" HorizontalAlignment="Right" VerticalAlignment="Center" />
 					<TextBox Grid.Row="1" Grid.Column="1" x:Name="Hub" />-->
-					<TextBlock HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" Text="Name:" FontSize="20" VerticalAlignment="Center" />
-					<TextBox  Grid.Row="0" Grid.Column="1" x:Name="Publisher" />
-					<!--<TextBlock Grid.Row="3" Grid.Column="0" Text="SAS:" FontSize="14.667" HorizontalAlignment="Right" VerticalAlignment="Center" />
+					<TextBlock HorizontalAlignment="Right" Grid.Row="0" Grid.Column="0" Margin="0, 0, 20, 0" Text="User Name:" FontSize="20" VerticalAlignment="Center"  />
+                    <TextBox  Grid.Row="0" Grid.Column="1" x:Name="Publisher" />
+                    <TextBlock HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0"  Margin="0, 0, 20, 0" Text="Namespace:" FontSize="20" VerticalAlignment="Center" />
+                    <TextBox  Grid.Row="1" Grid.Column="1" x:Name="Namespace" />
+                    <TextBlock HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0"  Margin="0, 0, 20, 0" Text="Key:" FontSize="20" VerticalAlignment="Center" />
+                    <TextBox  Grid.Row="2" Grid.Column="1" x:Name="Key" />
+                    <TextBlock HorizontalAlignment="Right" Grid.Row="3" Grid.Column="0" Margin="0, 0, 20, 0" Text="Key Name:" FontSize="20" VerticalAlignment="Center"  />
+                    <TextBox  Grid.Row="3" Grid.Column="1" x:Name="KeyName" />
+                    <TextBlock HorizontalAlignment="Right" Grid.Row="4" Grid.Column="0"  Margin="0, 0, 20, 0" Text="Hub Name:" FontSize="20" VerticalAlignment="Center" />
+                    <TextBox  Grid.Row="4" Grid.Column="1" x:Name="HubName" />
+                    <!--<TextBlock Grid.Row="3" Grid.Column="0" Text="SAS:" FontSize="14.667" HorizontalAlignment="Right" VerticalAlignment="Center" />
 					<TextBox Grid.Row="3" Grid.Column="1" x:Name="Sas" />-->
 				</Grid>
 
-				<Button x:ConnectionId='1' x:Name="RunButton" Content="Connect to Band" HorizontalAlignment="Left" Margin="0,10,0,15" VerticalAlignment="Top" Width="215"                      FontFamily="Global User Interface"/>
+				<Button x:ConnectionId='1' x:Name="RunButton" Content="Connect to Band" HorizontalAlignment="Left" Margin="0,0,0,15" VerticalAlignment="Top" Width="215"                      FontFamily="Global User Interface"/>
+                <Button x:ConnectionId='2' x:Name="StopButton" Visibility="Collapsed" Content="Disconnect from Band" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="215"                    FontFamily="Global User Interface"/>
 
-				
-				
-				<TextBlock x:Name="tempTextBlock" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Temperature" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
+                <TextBlock x:Name="packetText"  Visibility="Collapsed" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50"  FontSize="18.667" IsHitTestVisible="False" />
+
+                <TextBlock x:Name="tempTextBlock" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Temperature" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
 				<TextBlock x:Name="tempTimeStamp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TimeStamp" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False" Margin="0,0,0,35" />
 
 				<TextBlock x:Name="hrTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Heart Rate" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
@@ -46,17 +64,17 @@
 				<TextBlock x:Name="pedTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pedometer" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
 				<TextBlock x:Name="pedTimeStamp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TimeStamp" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False" Margin="0,0,0,35"/>
 
-				<TextBlock x:Name="distTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total Distance" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
+				<!--<TextBlock x:Name="distTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total Distance" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
 				<TextBlock x:Name="dispTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pace" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
-				<TextBlock x:Name="dissTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
-				<TextBlock x:Name="discmTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Current Motion" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
-				<TextBlock x:Name="disTimeStamp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TimeStamp" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False" Margin="0,0,0,35"/>
+				--><TextBlock x:Name="dissTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
+				<!--<TextBlock x:Name="discmTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Current Motion" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
+				<TextBlock x:Name="disTimeStamp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TimeStamp" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False" Margin="0,0,0,35"/>-->
 				
 				<TextBlock x:Name="statusTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Worn Status" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
 				<TextBlock x:Name="statusTimeStamp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TimeStamp" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False" Margin="0,0,0,20" />
-				<Button x:ConnectionId='2' x:Name="StopButton" Visibility="Collapsed" Content="Disconnect from Band" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="215"                    FontFamily="Global User Interface"/>
+				
 				<TextBlock x:Name="generalText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False" />
-				<TextBlock x:Name="packetText"  Visibility="Collapsed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="173" Width="380" FontSize="18.667" IsHitTestVisible="False" />
+				
 				<TextBlock x:Name="runTimer" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Time Elapsed" VerticalAlignment="Top" Height="33" Width="380" FontSize="26.667" IsHitTestVisible="False" />
 
 			</StackPanel>

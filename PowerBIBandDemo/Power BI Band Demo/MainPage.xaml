@@ -66,8 +66,8 @@
 
 				<!--<TextBlock x:Name="distTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total Distance" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
 				<TextBlock x:Name="dispTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pace" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
-				<TextBlock x:Name="dissTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
-				<TextBlock x:Name="discmTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Current Motion" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
+				--><TextBlock x:Name="dissTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
+				<!--<TextBlock x:Name="discmTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Current Motion" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>
 				<TextBlock x:Name="disTimeStamp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TimeStamp" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False" Margin="0,0,0,35"/>-->
 				
 				<TextBlock x:Name="statusTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Worn Status" VerticalAlignment="Top" Height="33" Width="380" FontSize="18.667" IsHitTestVisible="False"/>

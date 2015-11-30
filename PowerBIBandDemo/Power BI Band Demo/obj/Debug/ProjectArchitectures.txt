@@ -1,1 +1,1 @@
-D:\Development\My Code\Repos\EventHubPowerBI\PowerBIBandDemo\Power BI Band Demo\Event Hub Band Demo.csproj;neutral
+C:\Users\jehollan\Source\Repos\Event Hub Microsoft Band App\PowerBIBandDemo\Power BI Band Demo\Event Hub Band Demo.csproj;neutral
